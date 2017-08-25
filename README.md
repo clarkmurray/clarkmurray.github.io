@@ -1,8 +1,8 @@
 # clarkmurray.github.io
-## Awesome Inc U Web Developer Bootcamp Pre-Work
+### Awesome Inc U Web Developer Bootcamp Pre-Work
 
 
-### Social Media Profiles
+## Social Media Profiles
 
 **Facebook**: https://www.facebook.com/clark.murray.50
 
