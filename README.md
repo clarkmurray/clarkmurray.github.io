@@ -3,6 +3,7 @@
 
 
 
+
 ## Social Media Profiles
 
 **Facebook**: https://www.facebook.com/clark.murray.50
@@ -13,4 +14,4 @@
 
 **LinkedIn**: https://www.linkedin.com/in/clark-murray-1a5286123/
 
-**Stack Overflow**: https://stackexchange.com/users/11588164/clark-murray
+**Stack Overflow**: https://stackoverflow.com/users/8489520/clark-murray?tab=profile
