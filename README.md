@@ -1,6 +1,3 @@
-# clarkmurray.github.io
-
-
 ## Social Media Profiles
 
 **Facebook**: https://www.facebook.com/clark.murray.50
