@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	background-color: #FDFDFA;
+	font-family: Arial, Verdana, sans-serif;
+	width: 100%;
+	padding: 0;
+	line-height: 35px;
+}
+
+.content {
+	margin: auto;
+	width: 60%;
+}
+
+#contentPhoto {
+	float: left;
+	overflow: hidden;
+	width: 50%;
+}
+
+#aboutInfo {
+	float: left;
+	overflow: hidden;
+	width: 50%;
+	clear: right;
+}
+
+.textContent {
+	padding-top: 5px;
+	padding-bottom: 50px;
+	clear: left;
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	line-height: 50px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li.contact {
+	display: inline-block;
+	padding-right: 25px;
+}
+
+p {
+	font-size: 115%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: gray;
+}
