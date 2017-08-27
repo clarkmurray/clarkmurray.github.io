@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	background-color: #FDFDFA;
-	font-family: Arial, Verdana, sans-serif;
+	font-family: 'Raleway', Arial, sans-serif;
 	width: 100%;
 	padding: 0;
 	line-height: 35px;
@@ -18,17 +18,8 @@ body {
 	width: 50%;
 }
 
-#aboutInfo {
-	float: left;
-	overflow: hidden;
-	width: 50%;
-	clear: right;
-}
-
-.textContent {
-	padding-top: 5px;
+.bio {
 	padding-bottom: 50px;
-	clear: left;
 }
 
 footer {
