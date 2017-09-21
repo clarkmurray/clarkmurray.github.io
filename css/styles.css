@@ -58,3 +58,22 @@ a {
 a:hover {
 	color: gray;
 }
+
+header {
+	background-color: black;
+	color: white;
+	margin-bottom: 3em;
+}
+
+li.nav{
+	display: inline-block;
+	padding: 15px 20px;
+}
+
+a.blog-link {
+	color: red;
+}
+
+a.blog-link:hover {
+	color: blue;
+}
