@@ -3,11 +3,15 @@ layout: default
 title: My Blog
 ---
 
-<h1>Blog Posts</h1>
 
-<ul>
+<div class="container-fluid content">
+	<h1>Blog Posts</h1>
+	<hr />
+	<br />
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string}}</span> &raquo;
-      <a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></li>
+    <h1 class="blog-link"><a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></h1>
+    <span class="post-date">{{ post.date | date: '%B %-d, %Y' }}</span>
+    {{ post.excerpt }}
+    <br />
   {% endfor %}
-</ul>
+</div>

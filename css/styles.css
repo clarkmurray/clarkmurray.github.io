@@ -1,10 +1,26 @@
 body {
 	margin: 0;
-	background-color: #FDFDFA;
 	font-family: 'Raleway', Arial, sans-serif;
+	/* background-color: #FDFDFA; */
 	width: 100%;
 	padding: 0;
 	line-height: 35px;
+}
+
+header {
+	background-color: #228B22; /* Forest Green */
+	color: white;
+	margin-bottom: 3em;
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	line-height: 50px;
+	text-align: center;
+	background-color: darkgray; /* or dimgray */
+	color: white;
+	margin-top: 3em;
 }
 
 .content {
@@ -22,19 +38,18 @@ body {
 	padding-bottom: 50px;
 }
 
-footer {
-	width: 100%;
-	bottom: 0;
-	line-height: 50px;
-	text-align: center;
-	background-color: black;
-	color: white;
-}
-
-h1 {
+h1:not(.blog-link) {
 	text-align: center;
 }
 
+h1.blog-link {
+	font-weight: bold;
+	margin-bottom: .25em;
+}
+
+.post-date {
+	font-weight: bold;
+}
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -50,30 +65,65 @@ p {
 	font-size: 115%;
 }
 
-a {
+a.nav {
 	text-decoration: none;
 	color: white;
 }
 
 a:hover {
-	color: gray;
+	color: navy;
 }
 
-header {
-	background-color: black;
-	color: white;
-	margin-bottom: 3em;
-}
 
 li.nav{
 	display: inline-block;
 	padding: 15px 20px;
+	font-weight: bold;
 }
 
-a.blog-link {
-	color: red;
+.blog-link {
+	color: Navy;
+	text-decoration: none;
 }
 
-a.blog-link:hover {
+.blog-link:hover {
 	color: blue;
+}
+
+a.back {
+	text-decoration: none;
+	color: navy;
+}
+
+a.back:hover {
+	text-decoration: underline;
+}
+
+.post-date {
+	text-align: center;
+	font-weight: bold;
+}
+
+i.fa {
+	color: white;
+}
+
+.fa-facebook-square:hover {
+	color: #3B5998;
+}
+
+.fa-github-square:hover {
+	color: black;
+}
+
+.fa-instagram:hover {
+	color: #833ab4;
+}
+
+.fa-linkedin-square:hover {
+	color: #0077B5;
+}
+
+.fa-stack-overflow:hover {
+	color: #fa8024;
 }
