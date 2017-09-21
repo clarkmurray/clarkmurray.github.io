@@ -1,9 +1,12 @@
-body {
+html, body {
+	height: 100%;
 	margin: 0;
+	padding: 0;
+}
+body {
 	font-family: 'Raleway', Arial, sans-serif;
 	/* background-color: #FDFDFA; */
 	width: 100%;
-	padding: 0;
 	line-height: 35px;
 }
 
@@ -16,11 +19,18 @@ header {
 footer {
 	width: 100%;
 	bottom: 0;
-	line-height: 50px;
 	text-align: center;
 	background-color: darkgray; /* or dimgray */
 	color: white;
-	margin-top: 3em;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -3.2em;
+}
+
+footer, .push {
+	height: 3.2em;
 }
 
 .content {
@@ -58,7 +68,7 @@ ul {
 
 li.contact {
 	display: inline-block;
-	padding-right: 25px;
+	padding: .5em 1em;
 }
 
 p {
