@@ -22,6 +22,15 @@ footer {
 	background-color: darkgray; /* or dimgray */
 }
 
+@font-face {
+	font-family: "Bebas Neue";
+	src: url('/fonts/bebas_neue/BebasNeue Bold.otf');
+}
+
+.navbar-brand {
+	font-family: "Bebas Neue", 'Raleway', Arial, sans-serif; /* Bebas Neueu */
+}
+
 .content {
 	flex: 1 0 auto;
 }
@@ -141,6 +150,12 @@ a.back:hover {
 .post-date {
 	text-align: center;
 	font-weight: bold;
+}
+
+li.contact {
+	display: inline-block;
+	padding-right: 1.5em;
+	padding-top: 1em;
 }
 
 /* Social Media Icons */
