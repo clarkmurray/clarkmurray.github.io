@@ -3,46 +3,97 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
 body {
+	display: flex;
+	flex-direction: column;
 	font-family: 'Raleway', Arial, sans-serif;
 	/* background-color: #FDFDFA; */
 	width: 100%;
 	line-height: 35px;
 }
 
-header {
-	background-color: #228B22; /* Forest Green */
-	color: white;
-	margin-bottom: 3em;
-}
 
 footer {
 	width: 100%;
+	margin-top: 5em;
 	bottom: 0;
 	text-align: center;
 	background-color: darkgray; /* or dimgray */
-	color: white;
 }
 
-.wrapper {
-	min-height: 100%;
-	margin-bottom: -3.2em;
+@font-face {
+	font-family: "Bebas Neue";
+	src: url('/fonts/bebas_neue/BebasNeue Bold.otf');
 }
 
-footer, .push {
-	height: 3.2em;
+.navbar-brand {
+	font-family: "Bebas Neue", 'Raleway', Arial, sans-serif; /* Bebas Neueu */
 }
 
 .content {
-	margin: auto;
-	width: 60%;
+	flex: 1 0 auto;
 }
 
-#contentPhoto {
-	float: left;
-	overflow: hidden;
-	width: 50%;
+/* Bootstrapped Header */
+
+header {
+	margin-bottom: 8em;
 }
+
+nav {
+	background-color: #228B22;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.navbar-inverse {
+	background-color: #228B22;
+	border-bottom-color: #228B22;
+}
+
+.nav-link {
+	font-size: large;
+	color: white;
+}
+
+.nav-home {
+	font-size: xx-large;
+	font-weight: bold;
+	padding-left: 3em;
+}
+
+li.nav-link {
+	padding-right: 4em;
+}
+
+a.nav-link:visited {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li >a:hover, .navbar-inverse .navbar-nav > li >a:focus {
+    background-color: transparent;
+    color: navy;
+}
+
+button.navbar-toggle {
+	background: none;
+	border: none;
+	color: #228B22;
+}
+
+button.navbar-toggle:focus {
+	background: none;
+	border: none;
+	color: #228B22;
+}
+
+/* End Bootstrapped Header */
+
 
 .bio {
 	padding-bottom: 50px;
@@ -60,36 +111,23 @@ h1.blog-link {
 .post-date {
 	font-weight: bold;
 }
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
 
+/*
 li.contact {
 	display: inline-block;
 	padding: .5em 1em;
 }
+*/
 
 p {
 	font-size: 115%;
 }
 
-a.nav {
-	text-decoration: none;
-	color: white;
-}
-
+/*
 a:hover {
 	color: navy;
 }
-
-
-li.nav{
-	display: inline-block;
-	padding: 15px 20px;
-	font-weight: bold;
-}
+*/
 
 .blog-link {
 	color: Navy;
@@ -114,6 +152,13 @@ a.back:hover {
 	font-weight: bold;
 }
 
+li.contact {
+	display: inline-block;
+	padding-right: 1.5em;
+	padding-top: 1em;
+}
+
+/* Social Media Icons */
 i.fa {
 	color: white;
 }
@@ -137,3 +182,4 @@ i.fa {
 .fa-stack-overflow:hover {
 	color: #fa8024;
 }
+/* End Social Media Icons */
