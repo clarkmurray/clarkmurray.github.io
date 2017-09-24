@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>My Blog</title>
+	<title>{{ page.title }}</title>
 
 	<!--Bootstrap meta tags -->
 
@@ -44,34 +44,7 @@
 
 <div class="wrapper">
 
-	<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-8">
-			<div class="content">
-				<h1>Blog Posts</h1>
-				<hr />
-				<br />
-			  
-			    <h1 class="blog-link"><a class="blog-link" href="/2017/09/21/test-post.html">My Test Post</a></h1>
-			    <span class="post-date">September 21, 2017</span>
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis a nulla eget porta. Nunc accumsan elit eget sapien tincidunt consequat. Pellentesque egestas maximus semper. Pellentesque nec venenatis felis. Proin iaculis condimentum porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Curabitur egestas felis ante, sit amet feugiat nisi commodo sed. Cras condimentum in lorem sit amet rhoncus. Proin finibus viverra semper.</p>
-
-
-			    <br />
-			  
-			    <h1 class="blog-link"><a class="blog-link" href="/2017/09/21/another-test.html">Second Test Post</a></h1>
-			    <span class="post-date">September 21, 2017</span>
-			    <p>Fusce dui urna, ullamcorper eu egestas sit amet, pretium ac tellus. Duis ultrices velit in arcu porta placerat. Vivamus auctor tincidunt pharetra. Nam nec diam eu enim consectetur congue. Aliquam erat volutpat. Donec dolor felis, scelerisque a bibendum non, viverra ut quam. Vestibulum sit amet augue eu velit efficitur ultrices eu et arcu. Nunc sodales quam sed consequat faucibus. Suspendisse imperdiet, velit lacinia pulvinar cursus, quam eros porta ligula, et varius sem augue at diam.</p>
-
-
-			    <br />
-			  
-			</div>
-		</div>
-		<div class="col-sm-2"></div>
-	</div>
-</div>
+	{{ content }}
 
 	<div class="push"></div>
 </div>
@@ -92,13 +65,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-3"></div>
-			<div class="col-sm-6 col-centered"><p class="copyright">Copyright &copy;
-			<script>
-				var d = new Date();
-				var n = d.getFullYear();
-				document.write(n);
-			</script>
-			Clark Murray</p>
+			<div class="col-sm-6 col-centered"><p class="copyright">Copyright &copy; 2017 Clark Murray</p>
 			</div>
 			<div class="col sm-3"></div>
 		</div>
