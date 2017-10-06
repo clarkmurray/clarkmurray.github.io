@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Equal Height Columns With Flexbox</title>
+
+	<!--Bootstrap meta tags -->
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--End meta tags-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+
+<body>
+<div class="content">
+
+<header>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+      			<a class=" navbar-brand nav-link nav-home" href="/index.html">clark murray</a>
+      		</div>
+      		<div class="collapse navbar-collapse" id="myNavbar">
+	    		<ul class="nav navbar-nav navbar-right">
+	      			<li class="nav-link"><a class="nav-link nav-link-right" href="/index.html">about</a></li>
+	      			<li class="nav-link"><a class="nav-link nav-link-right" href="/blog-feed.html">blog</a></li>
+	      			<li class="nav-link"><a class="nav-link nav-link-right" href="/portfolio.html">portfolio</a></li>
+	    		</ul>
+    		</div>
+  		</div>
+	</nav>
+</header>
+
+<div class="wrapper">
+
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<h1>Equal Height Columns With Flexbox</h1>
+			<span class="post-date">October 6, 2017</span>
+
+			<div class="content">
+				<p>Already in my web development endeavors, I have frequently encountered trouble with a staple of web design that has no easy and reliable solution using regular CSS: equal height columns. While it can be accomplished with “hacks” such as setting up your content as a table to make your columns cells with equal height, none of these solutions are reliable in their responsiveness or interaction with the rest of your page. JavaScript could also be used, but should we really be forced to violate separation of concerns and write a block of code just to accomplish some of the most essential tasks in modern web design? Of course not!</p>
+
+<p>Thankfully, an easier and far more effective CSS-based method can be found using Flexbox. Flexbox (short for “flexible box”) was introduced in CSS3 as a responsive alternative to the block model. Where the block model assigns block height based on the box’s contents and is inflexible, Flexbox allows you to forego the headache of using floats and have more precide control over the style and positioning of your boxes and their child elements while also looking great on all screen sizes. To make the deal even sweeter, Flexbox is now supported on all major modern browsers (Chrome, FireFox, Safari, etc.), which means it is enjoying widespread use and, unless your site’s audience is expected to be on IE9-, it is to safe to use reliably in your own projects.</p>
+
+<p>As an example of Flexbox’s usefulness, I recently used it to finish work on a Hangman project written in JavaScript. Initially I had each part of the game stacked on top of one another, for which the box model was perfectly appropriate. Upon deciding to place my word next to the “gallows”, however, I found that I could not properly align my box contents because they were in separate divs and the gallows div was so much larger than the phrase div. The solution was to change the display of my boxes from <code class="highlighter-rouge">display: block;</code> to <code class="highlighter-rouge">display: flex</code>.</p>
+
+<p>This plays very well with Bootstrap. Given that Bootstrap already divides the page’s content into a series of  <code class="highlighter-rouge">&lt;div class="row"&gt;</code>’s, all I had to do was add a class to the row indicating that Flexbox was to be used, and set that class’s display to <code class="highlighter-rouge">flex</code>. Thus, with just a few words of code, I had equal-height columns regardless of the amount of content in each of them! To make columns more readable and to prevent the layout from breaking when child elements overflow out of their boxes, be sure to set <code class="highlighter-rouge">flex-wrap</code> to <code class="highlighter-rouge">wrap</code>. This will keep your columns neatly aligned in their rows the way you want them.</p>
+
+<p>Thus,</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nc">.row.flex-row</span> <span class="p">{</span>
+	<span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+	<span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
+<span class="p">}</span> 
+</code></pre>
+</div>
+
+<p>will give all columns in rows <code class="highlighter-rouge">flex-row</code> a height equal to the largest box in the row, with overflowing boxes beginning a new row rather than squishing your boxes’ contents. Ta-da!</p>
+
+<p>There is so much more to Flexbox than just these examples. You can change the direction of your flex containers, make your flexboxes inline instead of block, justify and align your content, and determine the order of your contents within a flex container. For more information and examples, check out W3’s <a href="https://www.w3schools.com/css/css3_flexbox.asp">documentation</a> as well as the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Mozilla Developer’s Network (MDN)</a>.</p>
+
+				<a class="back" href="/blog-feed.html">&laquo; Back</a>
+			</div>
+			<br />
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+</div>
+
+
+	<div class="push"></div>
+</div>
+</div>
+
+<footer class="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6 col-centered">
+				<ul>
+					<li class="contact"><a href="https://github.com/clarkmurray" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+					<li class="contact"><a href="https://www.linkedin.com/in/clark-murray-1a5286123/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+					<li class="contact"><a href="https://stackoverflow.com/users/8489520/clark-murray?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6 col-centered"><p class="copyright">Copyright &copy; 2017 Clark Murray</p>
+			</div>
+			<div class="col sm-3"></div>
+		</div>
+	</div>
+</footer>
+	
+	<!-- Bootstrap scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<!-- End scripts -->
+
+</body>
+</html>

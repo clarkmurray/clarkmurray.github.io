@@ -187,6 +187,11 @@ i.fa {
 }
 /* End Social Media Icons */
 
+
+.projectSpace {
+	margin-top: 50px;
+}
+
 .projectPhoto > a > img {
 	height: 250px;
 	width: 400px;
