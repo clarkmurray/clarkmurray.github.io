@@ -27,7 +27,7 @@ footer {
 }
 
 .navbar-brand {
-	font-family: "Bebas Neue", 'Raleway', Arial, sans-serif; /* Bebas Neueu */
+	font-family: "Bebas Neue", 'Raleway', Arial, sans-serif;
 }
 
 .content {
@@ -186,3 +186,33 @@ i.fa {
 	color: #fa8024;
 }
 /* End Social Media Icons */
+
+.projectPhoto > a > img {
+	height: 250px;
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.projectPhoto {
+	text-align: center;
+	background-color: #102156;
+	width: 50%;
+	margin: 0 auto;
+	padding: 30px;
+
+}
+
+.projectInfo {
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: justify;
+	background-color: #E9E0D0;
+	font-weight: bold;
+}
+
+.projectInfo > h3 {
+	text-align: center;
+}
