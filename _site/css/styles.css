@@ -28,6 +28,10 @@ footer {
 	src: url('/fonts/bebas_neue/BebasNeue Bold.otf');
 }
 
+.section {
+	padding-top: 80px;
+}
+
 .landing {
 	background-color: #000080;
 	color: white;

@@ -50,6 +50,7 @@ $('body').scrollspy({ target: '#navbar-example' })
 </script>
 
 	<div class = "container-fluid">
+
 		<div class="row" id="landing">
 			<div class="col-xs-8 col-xs-offset-2 text-center landing">
 				<h1 id="myName">Clark Murray</h1>
@@ -86,6 +87,9 @@ $('body').scrollspy({ target: '#navbar-example' })
 		</div>
 		</div>
 
+
+
+	<div id="about" class="section">
 		<div class="row">
 			<div class="col-sm-2"></div>
 			<div class ="col-sm-8 col-centered">
@@ -95,7 +99,7 @@ $('body').scrollspy({ target: '#navbar-example' })
 			<div class="col-sm-2"></div>
 		</div>
 
-		<div class="row" id="about">
+		<div class="row">
 			<div class="col-xs-2"></div>
 			<div class="col-xs-4 contentPhoto">
 					<img src="/images/gradPhoto.jpg" alt="Me at my college graduation" class="img-responsive">
@@ -106,8 +110,10 @@ $('body').scrollspy({ target: '#navbar-example' })
 			</div>
 			<div class="col-xs-2"></div>
 		</div>
+	</div>
 
-		<div class="row" id="portfolio">
+	<div id="portfolio" class="section">
+		<div class="row">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
 			<div class="content">
@@ -147,13 +153,52 @@ $('body').scrollspy({ target: '#navbar-example' })
 		<div class="col-sm-2"></div>
 	</div>
 
-	<div class="row" id="#contact">
-			<div class="col-xs-8 col-xs-2-offset text-center">
-				<h1>Contact Form</h1>
-			</div>
 	</div>
 
+
+	<div id="contact" class="section">
+		<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 text-center">
+					<h1>Contact</h1>
+					<hr>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+
+				<form>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea rows="5" id="message" class="form-control"></textarea>
+					</div>
+				</form>
+
+			</div>
+		</div>
 	</div>
+
+
+<script>
+
+$('a[href^="#"]').click(function(){
+
+var the_id = $(this).attr("href");
+
+    $('html, body').animate({
+        scrollTop:$(the_id).offset().top
+    }, 'slow');
+
+return false;});
+
+</script>
 
 
 	<div class="push"></div>
