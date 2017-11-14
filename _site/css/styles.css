@@ -259,3 +259,10 @@ i.fa {
 #nav-placeholder {
 	height: 78px;
 }
+
+.navbar .nav > li > a:active
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+	background-color: #000080 !important;
+	color: lightblue;
+}
