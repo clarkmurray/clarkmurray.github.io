@@ -9,7 +9,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Raleway', Arial, sans-serif;
-	/* background-color: #FDFDFA; */
 	width: 100%;
 	line-height: 35px;
 	position: relative;
@@ -215,39 +214,18 @@ i.fa {
 /* End Social Media Icons */
 
 
-.projectSpace {
-	margin-top: 50px;
-}
-
 .projectPhoto > a > img {
-	height: 250px;
-	width: 400px;
+	height: 100%;
+	width: 100%;
 	display: block;
-	margin: 0 auto;
-	text-align: center;
+	margin: 20px auto;
 }
 
-.projectPhoto {
-	text-align: center;
-	background-color: #102156;
-	width: 70%;
-	margin: 0 auto;
-	padding: 30px;
-
+.odd {
+	background-color: lightgray;
 }
 
-.projectInfo {
-	width: 70%;
-	margin: 0 auto;
-	padding: 10px;
-	text-align: justify;
-	background-color: #E9E0D0;
-	font-weight: bold;
-}
 
-.projectInfo > h3 {
-	text-align: center;
-}
 
 .fixed {
 	position: fixed; 
@@ -265,4 +243,8 @@ i.fa {
 .navbar .nav > li > a:hover {
 	background-color: #000080 !important;
 	color: lightblue;
+}
+
+.projectTitle {
+	text-align: center;
 }
