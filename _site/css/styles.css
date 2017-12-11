@@ -12,6 +12,7 @@ body {
 	width: 100%;
 	line-height: 35px;
 	position: relative;
+	background-color: gray;
 }
 
 footer {
@@ -29,6 +30,7 @@ footer {
 
 .section {
 	padding-top: 80px;
+	background-color: white;
 }
 
 .landing {
@@ -255,4 +257,10 @@ i.fa {
 
 .projectInfo {
 	margin-left: 10px !important;
+}
+
+.section {
+	margin-top: 30px;
+	margin-bottom: 50px;
+
 }
