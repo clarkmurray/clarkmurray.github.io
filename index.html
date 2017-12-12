@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Clark
+title: Clark Murray
 ---
 
 <div class = "container-fluid">
@@ -14,7 +14,9 @@ title: About Clark
 				<li class="contact-home"><a href="https://stackoverflow.com/users/8489520/clark-murray?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-3x" aria-hidden="true"></i></a></li>
 			</ul>
 			<h3 id="myCareer">Full-stack Web Developer</h3>
-			<h3><a href="#about">Learn More <i class="fa fa-arrow-down" aria-hidden="true"></i></a></h3>
+			<div id="learnMore" class="text-center">
+				<a href="#about"><i class="fa fa-chevron-down fa-5x" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</div>
 
@@ -46,8 +48,7 @@ title: About Clark
 	<div id="about" class="section">
 		<div class="row">
 			<!-- <div class="col-md-2"></div> -->
-			<div class="col-md-2 side"></div>
-			<div class ="col-md-8 col-centered">
+			<div class ="col-md-8 col-md-offset-2 col-centered">
 				<h1>{{ page.title }}</h1>
 				<hr>
 			</div>
@@ -78,22 +79,22 @@ title: About Clark
 		<div class="row project">
 
 			<div class="col-md-4 col-md-offset-2">
-				<h3 class="projectTitle text-center">Backlogged</h3>
+				<h3 class="projectTitle text-center"><a href="https://backlogged.herokuapp.com/" target="_blank">Backlogged</a></h3>
 				<div class="projectPhoto">
-				<a href="https://clarks-ice-cream-shop.herokuapp.com/" target="_blank"><img src="../images/clarkBacklogPage.png" class="img-responsive"></a>
+				<a href="https://backlogged.herokuapp.com/" target="_blank"><img src="../images/clarkBacklogPage.png" class="img-responsive"></a>
 			</div>
 			<div class="projectInfo">
-				<p>Backlogged is a Goodreads-like application that is meant to track users' backlogs across multiple forms of media (at present, books and movies, with TV shows currently under development). The application is built with Laravel on the back-end and Vue on the front-end, and also implements Algolia's Vue InstantSearch and Bootstrap 3. The source code can be found <a href="https://github.com/clarkmurray/ice-cream-shop-website" target="_blank">here</a>.</p>
+				<p>Backlogged is a Goodreads-like application that is meant to track users' backlogs across multiple forms of media (at present, books and movies, with TV shows currently under development). The application is built with Laravel on the back-end and Vue on the front-end, and also implements Algolia's Vue InstantSearch and Bootstrap 3. The source code can be found <a href="https://github.com/clarkmurray/backlog-project" target="_blank">here</a>.</p>
 			</div>
 			</div>
 
 			<div class="col-md-4">
-				<h3 class="projectTitle text-center">IPAM</h3>
+				<h3 class="projectTitle text-center"><a href="https://github.com/melanieps1/ipam-team" target="_blank">IPAM</a></h3>
 				<div class=" projectPhoto">
-					<a href="#" target="_blank"><img src="../images/ipam.png" class="img-responsive"></a>
+					<a href="https://github.com/melanieps1/ipam-team" target="_blank"><img src="../images/ipam.png" class="img-responsive"></a>
 				</div>
 				<div class="projectInfo">
-					<p>IPAM (Internet Protocol Address Manager) began as a final group project for the S17 cohort of the Awesome Inc U Bootcamp. I and three others were tasked with converting the front-end of the application from Angular to Vue, to allow for greater compatibiltiy with the Laravel framework that was used on the backend. We also converted the project away from the Bootstrap CSS framework and into Vuetify. The source code can be found <a href="https://github.com/clarkmurray/js-hangman" target="_blank">here</a>.</p>
+					<p>IPAM (Internet Protocol Address Manager) began as a final group project for the S17 cohort of the Awesome Inc U Bootcamp (the cohort prior to mine). I and three others were tasked with converting the front-end of the application from Angular to Vue, to allow for greater compatibiltiy with the Laravel framework that was used on the back-end. We also converted the project away from the Bootstrap CSS framework and into Vuetify. The source code can be found <a href="https://github.com/melanieps1/ipam-team" target="_blank">here</a>.</p>
 				</div>
 			</div>
 
@@ -101,21 +102,21 @@ title: About Clark
 
 		<div class="row project">
 			<div class="col-md-4 col-md-offset-2">
-				<h3 class="text-center">Larry Mail</h3>
+				<h3 class="text-center"><a href="https://github.com/bootcamp-f17/laravel-mail" target="_blank">Larry Mail</a></h3>
 				<div class="projectPhoto">
-					<a href="http://awesome-hangman.herokuapp.com/" target="_blank"><img src="../images/larrymail.png" class="img-responsive"></a>
+					<a href="https://github.com/bootcamp-f17/laravel-mail" target="_blank"><img src="../images/larrymail.png" class="img-responsive"></a>
 				</div>
 				<div class="projectInfo">
-					<p>Larry Mail is an internal messaging application built in the style of Gmail using Laravel, and capable of exchanging messages between registered users as well as starring messages, creating drafts, and soft and hard deletes. The application was a group project, with the group being split into three teams, each of whom worked on separate features and bugs while coordinating with the other teams via Github Issues. My group worked primarily on the reply functionality (both to single and multiple recipients), drafts, and cleaning up sundry bugs.   The source code can be found <a href="https://github.com/clarkmurray/js-hangman" target="_blank">here</a>.</p>
+					<p>Larry Mail is an internal messaging application built in the style of Gmail using Laravel, and capable of exchanging messages between registered users as well as starring messages, creating drafts, and soft and hard deletes. The application was a group project, with the group being split into three teams, each of whom worked on separate features and bugs while coordinating with the other teams via Github Issues. My group worked primarily on the reply functionality (both to single and multiple recipients), drafts, and cleaning up sundry bugs.   The source code can be found <a href="https://github.com/bootcamp-f17/laravel-mail" target="_blank">here</a>.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<h3 class="text-center">Bat-Net</h3>
+				<h3 class="text-center"><a href="https://hero-book.herokuapp.com/" target="_blank">Bat-Net</a></h3>
 				<div class=" projectPhoto">
-					<a href="http://awesome-hangman.herokuapp.com/" target="_blank"><img src="../images/batnet.png" class="img-responsive"></a>
+					<a href="https://hero-book.herokuapp.com/" target="_blank"><img src="../images/batnet.png" class="img-responsive"></a>
 				</div>
 				<div class="projectInfo">
-					<p>A dynamic site demonstration of pure PHP and SQL. The site was a single-day class project made at the end of Week 6 of Bootcamp. The Source code can be found <a href="https://github.com/clarkmurray/js-hangman" target="_blank">here</a>.</p>
+					<p>A dynamic site demonstration of pure PHP and SQL that began as a single-day class project made at the end of Week 6 of Bootcamp. The site contains basic information about several superheroes from the "Bat Family" from DC Comics, with each hero having their own dynamically created profile in addition to being displayed in the master list on the homepage. The Source code can be found <a href="https://github.com/clarkmurray/herobook" target="_blank">here</a>.</p>
 				</div>
 			</div>
 		</div>
@@ -123,12 +124,12 @@ title: About Clark
 
 		<div class="row project">
 			<div class="col-md-4 col-md-offset-2">
-				<h3 class="text-center">Vue Sorting Hat</h3>
+				<h3 class="text-center"><a href="https://vuejs-sorting-hat.herokuapp.com/" target="_blank">Vue Sorting Hat</a></h3>
 				<div class="projectPhoto">
-					<a href="http://awesome-hangman.herokuapp.com/" target="_blank"><img src="../images/sortinghat.png" class="img-responsive"></a>
+					<a href="https://vuejs-sorting-hat.herokuapp.com/" target="_blank"><img src="../images/sortinghat.png" class="img-responsive"></a>
 				</div>
 				<div class="projectInfo">
-					<p>A Harry Potter-flavored quizin the vein of Buzzfeed. The single-page application was made using Vue.js. The code for it can be found <a href="https://github.com/clarkmurray/js-hangman" target="_blank">here</a>.</p>
+					<p>A Harry Potter-flavored quiz in the vein of Buzzfeed. The user takes a five question quiz, and is then sorted into one of the four Hogwarts houses based on their answers. The single-page application began as a one-day project meant to demonstrate compentency with Vue.js, and received further tweaks and refinement since then. The code for it can be found <a href="https://github.com/clarkmurray/vue-sorting-hat" target="_blank">here</a>.</p>
 				</div>
 			</div>
 		</div>
@@ -136,7 +137,7 @@ title: About Clark
 	</div>
 
 
-	<div id="contact" class="section">
+	<div id="contact" class="section contactSection
 		<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<h1 class="text-center">Contact</h1>
@@ -147,19 +148,25 @@ title: About Clark
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<form action="https://formspree.io/clarkamurray@gmail.com" method="POST">
-					<div class="form-group">
-						<label for="name">Name</label>
-						<input type="text" name="name" id="name" class="form-control">
+					<div class="form-group row">
+						<label for="name" class="col-md-1">Name</label>
+						<div class="col-md-7">
+							<input type="text" name="name" id="name" class="form-control">
+						</div>
 					</div>
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" name="_replyto" id="email" class="form-control">
+					<div class="form-group row">
+						<label for="email" class="col-md-1">Email</label>
+						<div class="col-md-7">
+							<input type="email" name="_replyto" id="email" class="form-control">
+						</div>
 					</div>
 					<div class="form-group">
 						<label for="message">Message</label>
 						<textarea rows="5" id="message" class="form-control"></textarea>
 					</div>
-					<input type="submit" value="Send">
+					<div class="form-group text-center">
+						<input type="submit" value="Send">
+					</div>
 				</form>
 			</div>
 		</div>

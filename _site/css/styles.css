@@ -12,7 +12,6 @@ body {
 	width: 100%;
 	line-height: 35px;
 	position: relative;
-	background-color: gray;
 }
 
 footer {
@@ -249,7 +248,15 @@ i.fa {
 
 .project {
 	padding-top: 10px;
+	margin-top: 20px;
 }
+
+@media only screen and (max-width: 900px) {
+	.project {
+		margin-top: 5px;
+	}
+}
+
 
 .projectTitle {
 	text-align: center;
@@ -257,10 +264,34 @@ i.fa {
 
 .projectInfo {
 	margin-left: 10px !important;
+	margin-top: 20px;
 }
 
 .section {
 	margin-top: 30px;
 	margin-bottom: 50px;
 
+}
+
+h3 > a {
+	text-decoration: none;
+	color: black;
+}
+
+h3 > a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+#learnMore {
+	margin-top: 100px;
+}
+
+a.nav-link.nav-link-right.active {
+	background-color: #000080;
+	color: lightblue;
+}
+
+#blogContent {
+	margin-top: 30px;
 }

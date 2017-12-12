@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="row">
+	<div id="nav-placeholder">
+	<nav class="navbar navbar-inverse">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+      			<a class=" navbar-brand nav-link nav-home" href="{{ './index.html#landing' | absolute_url }}">clark murray</a>
+      		</div>
+      		<div class="collapse navbar-collapse" id="myNavbar">
+	    		<ul class="nav navbar-nav navbar-right">
+	      			<li class="nav-link" data-target="#about"><a class="nav-link nav-link-right" href="{{ './index.html#about' | absolute_url }}">about</a></li>
+	      			<li class="nav-link" data-target="#portfolio"><a class="nav-link nav-link-right" href="{{ './index.html#portfolio' | absolute_url }}">portfolio</a></li>
+	      			<li class="nav-link" data-target="#contact"><a class="nav-link nav-link-right" href="{{ './index.html#contact' | absolute_url }}">contact</a></li>
+	      			<li class="nav-link"><a class="nav-link nav-link-right" href="/blog-feed.html">blog</a></li>
+	    		</ul>
+    		</div>
+	</nav>
+	</div>
+</div>
+
+<div id="blogContent">
+	{{ content }}
+</div>
