@@ -174,18 +174,12 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<form action="https://formspree.io/clarkamurray@gmail.com" method="POST">
-					<div class="form-group row">
-						<label for="name" class="col-md-1">Name</label>
-						<div class="col-md-7">
-							<input type="text" name="name" id="name" class="form-control">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="email" class="col-md-1">Email</label>
-						<div class="col-md-7">
-							<input type="email" name="_replyto" id="email" class="form-control">
-						</div>
-					</div>
+						<span class="align-center">
+							<label for="name" id="nameLabel">Name</label>
+							<input type="text" name="name" id="name">
+							<label for="email" id="emailLabel">Email</label>
+							<input type="email" name="_replyto" id="email">
+						</span>
 					<div class="form-group">
 						<label for="message">Message</label>
 						<textarea rows="5" id="message" class="form-control"></textarea>

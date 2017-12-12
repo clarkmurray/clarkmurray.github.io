@@ -47,6 +47,16 @@ footer {
 	font-size: 60px;
 }
 
+@media only screen and (max-width: 900px) {
+	a.navbar-brand.nav-link.nav-home {
+		padding-left: 30px !important;
+	}
+	a.navbar-brand.nav-link.nav-home.active {
+		padding-left: 30px !important;
+	}
+
+}
+
 li.contact-home {
 	display: inline-block;
 	text-decoration: none;
@@ -165,6 +175,10 @@ a.back {
 
 a.back:hover {
 	text-decoration: underline;
+}
+
+a.back:visited {
+	color: navy;
 }
 
 .post-date {
@@ -294,4 +308,36 @@ a.nav-link.nav-link-right.active {
 
 #blogContent {
 	margin-top: 30px;
+}
+
+#nameAndEmail {
+	text-align: center;
+}
+
+
+#name  {
+	width: 40%;
+	margin-left: 10px;
+	margin-right: 20px;
+	border: 1px solid black;
+}
+
+#email {
+	width: 40%;
+	margin-left: 10px;
+}
+
+div#myNavbar.navbar-collapse.collapse.show {
+	background-color: #000080;
+	color: white;
+	z-index: 999;
+}
+
+button.navbar-toggle aria-expanded {
+	background-color: white;
+	color: #000080;
+}
+
+button.navbar-toggle.collapsed {
+	background-color: #000080 !important;
 }
