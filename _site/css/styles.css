@@ -325,15 +325,8 @@ a.nav-link.nav-link-right.active {
 div#myNavbar.navbar-collapse.collapse.show {
 	background-color: #000080;
 	color: white;
-	z-index: 9999 !important;
-	opacity: 1 !important;
 	width: 100% !important;
 	margin: 0 !important;
-}
-
-a.nav-link.nav-link-right {
-	opacity: 1 !important;
-	z-index: 9999 !important;
 }
 
 button.navbar-toggle[aria-expanded="true"] {
@@ -350,4 +343,12 @@ button.navbar-toggle.collapsed {
 
 .myPhoto {
 	width: 100% !important;
+}
+
+.col-md-8.col-md-offset-2.text-center {
+	position: static !important;
+}
+
+.col-md-8.col-md-offset-2 {
+	position: static !important;
 }
