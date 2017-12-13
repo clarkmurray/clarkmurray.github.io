@@ -80,6 +80,7 @@ li.contact-home {
 	padding-bottom: 1em;
 	width: 100%;
 	height: 100%;
+	border-radius: 0px !important;
 }
 
 .navbar-inverse {
@@ -315,29 +316,38 @@ a.nav-link.nav-link-right.active {
 }
 
 
-#name  {
-	width: 40%;
-	margin-left: 10px;
-	margin-right: 20px;
-	border: 1px solid black;
-}
+#name, #email, #message  {
+	padding: 20px;
+	font-size: 16px;
 
-#email {
-	width: 40%;
-	margin-left: 10px;
 }
 
 div#myNavbar.navbar-collapse.collapse.show {
 	background-color: #000080;
 	color: white;
-	z-index: 999;
+	z-index: 9999 !important;
+	opacity: 1 !important;
+	width: 100% !important;
+	margin: 0 !important;
 }
 
-button.navbar-toggle aria-expanded {
-	background-color: white;
-	color: #000080;
+a.nav-link.nav-link-right {
+	opacity: 1 !important;
+	z-index: 9999 !important;
+}
+
+button.navbar-toggle[aria-expanded="true"] {
+	background-color: white !important;
+}
+
+button.navbar-toggle[aria-expanded="true"] > span.icon-bar {
+	background-color: #000080 !important;
 }
 
 button.navbar-toggle.collapsed {
 	background-color: #000080 !important;
+}
+
+.myPhoto {
+	width: 100% !important;
 }

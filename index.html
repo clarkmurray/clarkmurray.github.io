@@ -46,13 +46,12 @@ title: Clark Murray
 
 
 	<div id="about" class="section">
+
 		<div class="row">
-			<!-- <div class="col-md-2"></div> -->
-			<div class ="col-md-8 col-md-offset-2 col-centered">
-				<h1>{{ page.title }}</h1>
+			<div class ="col-md-8 col-md-offset-2 text-center">
+				<h1>About Me</h1>
 				<hr>
 			</div>
-		<!-- 	<div class="col-sm-2"></div> -->
 		</div>
 
 		<div class="row">
@@ -148,18 +147,20 @@ title: Clark Murray
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<form action="https://formspree.io/clarkamurray@gmail.com" method="POST">
-						<span class="align-center">
-							<label for="name" id="nameLabel">Name</label>
-							<input type="text" name="name" id="name">
-							<label for="email" id="emailLabel">Email</label>
-							<input type="email" name="_replyto" id="email">
-						</span>
+					<div class="form-group">
+						<label for="name" id="nameLabel col-form-label">Name</label>
+						<input type="text" name="name" id="name" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="email" id="emailLabel col-form-label">Email</label>
+						<input type="email" name="_replyto" id="email" class="form-control">
+					</div>
 					<div class="form-group">
 						<label for="message">Message</label>
 						<textarea rows="5" id="message" class="form-control"></textarea>
 					</div>
 					<div class="form-group text-center">
-						<input type="submit" value="Send">
+						<input type="submit" value="Send" class="btn btn-default">
 					</div>
 				</form>
 			</div>
