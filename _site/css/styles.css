@@ -47,6 +47,10 @@ footer {
 	font-size: 60px;
 }
 
+a#myName, a#myName:hover, a#myName:visited {
+	color: white;
+}
+
 @media only screen and (max-width: 900px) {
 	a.navbar-brand.nav-link.nav-home {
 		padding-left: 30px !important;
