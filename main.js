@@ -47,4 +47,3 @@ $(document).on('click','.navbar-collapse',function(e) {
         $(this).collapse('hide');
     }
 });
-

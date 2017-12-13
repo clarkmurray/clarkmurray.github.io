@@ -341,9 +341,16 @@ a.nav-link.nav-link-right.active {
 div#myNavbar.navbar-collapse.collapse.show {
 	background-color: #000080;
 	color: white;
-	width: 100% !important;
-	margin: 0 !important;
+	text-align: left;
 }
+
+ul.nav.navbar-nav.navbar-right {
+	padding-left: 15px;
+}
+
+/*div#myNavbar.navbar-collapse.collapse.show > a.nav-link.nav-link-right {
+	text-align: left;
+}*/
 
 button.navbar-toggle[aria-expanded="true"] {
 	background-color: white !important;
