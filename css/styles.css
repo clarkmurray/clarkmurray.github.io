@@ -63,6 +63,20 @@ a.navbar-brand.nav-link.nav-home.active, a.navbar-brand.nav-link.nav-home.active
 		padding-left: 30px !important;
 	}
 
+	a.nav-link.nav-link-right {
+		margin: 5px !important;
+	}
+
+}
+
+@media only screen and (max-width: 872px) {
+	a.navbar-brand.nav-link-nav-home, a.navbar-brand.nav-link.nav-home.active {
+		font-size: 30px;
+	}
+	a.nav-link.nav-link-right {
+		margin: 1px !important;
+		padding: 15px 5px;
+	}
 }
 
 li.contact-home {
@@ -353,4 +367,9 @@ button.navbar-toggle.collapsed {
 
 .col-md-8.col-md-offset-2 {
 	position: static !important;
+}
+
+
+@media (max-width: 992px) {
+    
 }
