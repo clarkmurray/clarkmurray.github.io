@@ -47,8 +47,11 @@ footer {
 	font-size: 60px;
 }
 
-a.navbar-brand.nav-link.nav-home, a.navbar-brand.nav-link.nav-home:hover, a.navbar-brand.nav-link.nav-home:visited
-, a.navbar-brand.nav-link.nav-home.active, a.navbar-brand.nav-link.nav-home.active:hover, a.navbar-brand.nav-link.nav-home.active:visited {
+a.navbar-brand.nav-link.nav-home, a.navbar-brand.nav-link.nav-home:hover, a.navbar-brand.nav-link.nav-home:visited {
+	color: white !important;
+}
+
+a.navbar-brand.nav-link.nav-home.active, a.navbar-brand.nav-link.nav-home.active:hover, a.navbar-brand.nav-link.nav-home.active:visited {
 	color: white !important;
 }
 
@@ -241,12 +244,6 @@ i.fa {
 	display: block;
 /*	margin: 10px 20px auto;*/
 }
-
-.odd {
-	background-color: lightgray;
-}
-
-
 
 .fixed {
 	position: fixed; 
