@@ -51,4 +51,4 @@ Another drawback to the MVC is that its effectiveness is tied to user input and 
 ## Conclusion
 
 
-While it may not be a catch-all solution for every type of application, it's easy to see how MVC has become one of the dominant software architectural patterns ever since the advent of the GUI. While the frameworks that utilize it may come and go as best practices change, the pattern itself is timeless thanks to its adherence to fundamental software engineering principles such as modularity and portability, and 
+While it may not be a catch-all solution for every type of application, it's easy to see how MVC has become one of the dominant software architectural patterns ever since the advent of the GUI. While the frameworks that utilize it may come and go as best practices change, the pattern itself is timeless thanks to its adherence to fundamental software engineering principles.

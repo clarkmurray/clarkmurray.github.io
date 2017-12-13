@@ -348,10 +348,6 @@ ul.nav.navbar-nav.navbar-right {
 	padding-left: 15px;
 }
 
-/*div#myNavbar.navbar-collapse.collapse.show > a.nav-link.nav-link-right {
-	text-align: left;
-}*/
-
 button.navbar-toggle[aria-expanded="true"] {
 	background-color: white !important;
 }
