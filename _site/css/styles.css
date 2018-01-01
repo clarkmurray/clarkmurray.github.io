@@ -167,11 +167,6 @@ h1.blog-link {
 	margin-bottom: .25em;
 }
 
-.post-date {
-	font-weight: bold;
-}
-
-
 p {
 	font-size: 115%;
 }
@@ -371,9 +366,4 @@ button.navbar-toggle.collapsed {
 
 .col-md-8.col-md-offset-2 {
 	position: static !important;
-}
-
-
-@media (max-width: 992px) {
-    
 }

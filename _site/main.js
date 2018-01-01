@@ -10,7 +10,6 @@ $(window).scroll(function(){
 
 $('body').scrollspy({ target: '#myNavbar' })
 
-// filter handling for a /dir/ OR /indexordefault.page
 function filterPath(string) {
   return string
     .replace(/^\//, '')
