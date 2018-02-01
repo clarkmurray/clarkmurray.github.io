@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Object-Oriented Programming Part 1</title>
+
+	<!--Bootstrap meta tags -->
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--End meta tags-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</head>
+
+<body data-spy="scroll">
+
+<div class="content">
+
+	<div class="wrapper">
+
+		<div class="row">
+	<div id="nav-placeholder">
+	<nav class="navbar navbar-inverse">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+      			<a class=" navbar-brand nav-link nav-home" href="http://localhost:4000/index.html#landing">clark murray</a>
+      		</div>
+      		<div class="collapse navbar-collapse" id="myNavbar">
+	    		<ul class="nav navbar-nav navbar-right">
+	      			<li class="nav-link" data-target="#about"><a class="nav-link nav-link-right" href="http://localhost:4000/index.html#about">about</a></li>
+	      			<li class="nav-link" data-target="#portfolio"><a class="nav-link nav-link-right" href="http://localhost:4000/index.html#portfolio">portfolio</a></li>
+	      			<li class="nav-link" data-target="#contact"><a class="nav-link nav-link-right" href="http://localhost:4000/index.html#contact">contact</a></li>
+	      			<li class="nav-link"><a class="nav-link nav-link-right" href="/blog-feed.html">blog</a></li>
+	    		</ul>
+    		</div>
+	</nav>
+	</div>
+</div>
+
+<div id="blogContent">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h1>Object-Oriented Programming Part 1</h1>
+			<div class="text-center">
+				<h4 class="post-date">January 31, 2018</h4>
+			</div>
+
+			<br />
+
+			<div class="content">
+				<p>Object-oriented programming is a programming paradigm based around separating data and the means of manipulating data into separate, reusable sections of code known “classes”, with the logic of the program deriving from the interaction between classes. Classes are typically designed to serve as a data models of real world objects. For example, a chair might be represented by a “Chair” class, which would contain information about the chair such as how many legs it has, what color it is, and what material it is made out of, as well as representing actions that the chair may be able to perform, such as whether or not it can recline or roll. A basic class might look something like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+class Person {
+
+	public $career;
+
+	private $name;
+
+	protected $age;
+
+	public function __construct($name, $age, $career)
+	{
+		$this-&gt;name = $name;
+		$this-&gt;age = $age;
+		$this-&gt;career = $career;
+	}
+
+	public function getName()
+	{
+		return $this-&gt;name;
+	}
+
+	public function changeName($new_name)
+	{
+		$this-&gt;name = $new_name;
+	}
+
+	public function getAge()
+	{
+		return $this-&gt;age;
+	}
+
+	public function haveBirthday() 
+	{
+		$this-&gt;age++;
+	}
+
+}
+
+</code></pre>
+</div>
+
+<p>Some of the keywords in this example may seem foreign and confusing (protected, public, __construct), but for the most part, notice that the class is primarily composed of simple variables and functions. In OOP, these variables and functions work the same way, with the exception being that variables within a class are known as “properties and functions within a class are called “methods”.</p>
+
+<p>This is all well and good, but what use are classes if we don’t know how to access the data that is inside of them? And why is the paradigm called Object-Oriented Programming if it is made up of classes? As you may have noticed, the Person class that we have defined above refers to a general person, rather then to a specific individual such as a Sue class or a Bob class. This is because classes are the general blueprints that allow for the construction of specific instances, which are known as objects. To create an object from a class (a process known as instantiation), you can use the <code class="highlighter-rouge">new</code> keyword followed by the class and assign it to a variable, like so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$sue = new Person();
+
+die(var_dump($sue));
+</code></pre>
+</div>
+
+<p>If you try running this, however, it will return an error stating that you are missing some arguments have undefined variables. This is where the <code class="highlighter-rouge">__construct</code> method that we alluded to earlier comes in. When you instantiate a new object, you may pass in arguments to the object as you would a function. The arguments will then be used within the <code class="highlighter-rouge">__construct</code> method as soon as the object is created. In this case, the constructor is used to assign values to the object’s <code class="highlighter-rouge">$name</code>, <code class="highlighter-rouge">$age</code>, and <code class="highlighter-rouge">$career</code> properties. Thus, by inserting arguments to the pass to the constructor:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$sue = new Person('Sue', 30, 'Web Developer');
+
+die(var_dump($sue));
+</code></pre>
+</div>
+
+<p>we get:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>object(Person)#1 (3) {
+  ["name":protected]=&gt;
+  string(3) "Sue"
+  ["age":protected]=&gt;
+  int(30)
+  ["career"]=&gt;
+  string(13) "Web Developer"
+}
+</code></pre>
+</div>
+
+<p>Voila! We now have a <code class="highlighter-rouge">$sue</code> object that is an instance of the <code class="highlighter-rouge">Person</code> class and that gives us some basic information about Sue. You can instantiate as many objects from the same class as you like.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$sue = new Person('Sue', 30, 'Web Developer');
+$bob = new Person('Bob', 27, 'Web Designer');
+$batman = new Person('Batman', 32, 'Superhero');
+
+die(var_dump($sue, $bob, $batman));
+
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>object(Person)#1 (3) {
+  ["name":protected]=&gt;
+  string(3) "Sue"
+  ["age":protected]=&gt;
+  int(30)
+  ["career"]=&gt;
+  string(13) "Web Developer"
+}
+object(Person)#2 (3) {
+  ["name":protected]=&gt;
+  string(3) "Bob"
+  ["age":protected]=&gt;
+  int(27)
+  ["career"]=&gt;
+  string(12) "Web Designer"
+}
+object(Person)#3 (3) {
+  ["name":protected]=&gt;
+  string(6) "Batman"
+  ["age":protected]=&gt;
+  int(32)
+  ["career"]=&gt;
+  string(9) "Superhero"
+}
+
+</code></pre>
+</div>
+
+<h2 id="getters-and-setters">Getters and Setters</h2>
+
+<p>Now that we know how to create classes and objects, there are still three unfamiliar keywords to look at in the above code: <code class="highlighter-rouge">public</code>, <code class="highlighter-rouge">private</code>, and <code class="highlighter-rouge">protected</code>. Put simply, these words establish how the data within a class can be accessed. <code class="highlighter-rouge">public</code> properties and methods can be accessed from anywhere in the code. For example, if Bob decided to transition from web design to web development, we could update <code class="highlighter-rouge">$career</code> like so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$bob-&gt;career = 'Web Developer';
+</code></pre>
+</div>
+
+<p>If Bob decided to change his name, however, he would find the process a little more complicated.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$bob-&gt;name = 'Robert';
+
+
+// Error alert
+
+Fatal error: Uncaught Error: Cannot access private property Person::$name
+
+</code></pre>
+</div>
+
+<p>This is because unlike <code class="highlighter-rouge">$career</code>, <code class="highlighter-rouge">$name</code> is a <code class="highlighter-rouge">private</code> property (note that the error message tells us “Cannot access private property”). While <code class="highlighter-rouge">public</code> properties and methods such as <code class="highlighter-rouge">$career</code> can be accessed from anywhere in the code, <code class="highlighter-rouge">private</code> properties and methods such as <code class="highlighter-rouge">$name</code> <em>can only be accessed from within the object itself</em>. Thus, when we tried to change it from outside of the Bob object, it caused the program to fail.</p>
+
+<p>If <code class="highlighter-rouge">private</code> data inside of an object can be accessed from outside of an object, how are we supposed to access it then? The answer is with getters and setters. Within the Person class, there are four methods aside from <code class="highlighter-rouge">__construct</code> that we have defined. Two of these methods, <code class="highlighter-rouge">getName</code> and <code class="highlighter-rouge">getAge</code> return data to us, while the other two, <code class="highlighter-rouge">changeName</code> and <code class="highlighter-rouge">haveBirthday</code>, change the data. The first two methods are known as getters, since they allow us to get the data, and the last two are known as setters, as they can set the data. Furthermore, all four methods are <code class="highlighter-rouge">public</code>, which means that while the properties they are changing cannot be accessed from outside of the object, the methods that access them can be. So if we were to run</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$bob-&gt;changeName('Robert');
+</code></pre>
+</div>
+
+<p>we would see that the ensuing <code class="highlighter-rouge">var_dump</code> would list Person #2’s (that is, the second instance of the Person class) as “Robert” rather than “Bob”.</p>
+
+<p>If you were paying attention, you may have already noticed that I said <code class="highlighter-rouge">getAge</code> and <code class="highlighter-rouge">haveBirthday</code> function the same way as <code class="highlighter-rouge">getName</code> and <code class="highlighter-rouge">changeName</code>, despite the the former properties dealing with a <code class="highlighter-rouge">protected</code> property rather than a <code class="highlighter-rouge">private</code> one. If neither <code class="highlighter-rouge">private</code> or <code class="highlighter-rouge">protected</code> data can be accessed from outside of the object, and both use getters and setters, what is the difference? There is only one: unlike <code class="highlighter-rouge">private</code> data, which can only be accessed from within the object that defines it, <code class="highlighter-rouge">protected</code> data can be accessed via parent and inheriting classes as well.</p>
+
+<h2 id="inheritance">Inheritance</h2>
+
+<p>Classes do not just consist of the data that has been explicitly defined within them. They can also consist of data that has been passed to them from parent classes (of which the class in question is a subclass), and pass their data to their own subclasses. For example, a Person class may inherit some properties and methods from a Mammal class, which may in turn have inherited some data from an Animal class. As mentioned in the previous section, a subclass inherits all of the public and protected data from its parent class, and passes on all of its public and protected data to its own subclasses. Subclasses declare what their parent class is via the <code class="highlighter-rouge">extends</code> keyword.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+class Animal {
+
+	protected $multicellular = true;
+	private $reproduces = true;
+
+	public function isMulticellular()
+	{
+		return $this-&gt;multicellular;
+	}
+
+	public function doesReproduce()
+	{
+		return $this-&gt;reproduces;
+	}
+
+}
+
+class Mammal extends Animal {
+
+	protected $lays_egges = false;
+
+}
+
+class Person extends Mammal {
+
+	public $career;
+
+	private $name;
+
+	protected $age;
+
+	public function __construct($name, $age, $career)
+	{
+		$this-&gt;name = $name;
+		$this-&gt;age = $age;
+		$this-&gt;career = $career;
+	}
+
+	public function getName()
+	{
+		return $this-&gt;name;
+	}
+
+	public function changeName($new_name)
+	{
+		$this-&gt;name = $new_name;
+	}
+
+	public function getAge()
+	{
+		return $this-&gt;age;
+	}
+
+	public function haveBirthday() 
+	{
+		$this-&gt;age++;
+	}
+
+}
+
+</code></pre>
+</div>
+
+<p>Here, the Mammal class inherits the <code class="highlighter-rouge">$multicellular</code> protected property from the Animal class, as well as the public method <code class="highlighter-rouge">isMulticellular()</code>. The same holds true for the subclass of a subclass, so that the Person class inherits the <code class="highlighter-rouge">laysEggs()</code> method from the Mammal class, as well as the <code class="highlighter-rouge">isMulticellular()</code> method from the Animal class via the Mammal class.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// bool(true)
+
+$animal = new Animal();
+
+die(var_dump($animal-&gt;isMulticellular()));
+
+
+// bool(true)
+
+$mammal = new mammal();
+
+die(var_dump($mammal-&gt;isMulticellular()));
+
+
+// bool(false)
+
+$mammal = new Mammal();
+
+die(var_dump($mammal-&gt;laysEggs()));
+
+
+// bool(false)
+
+$person = new Person('Sue', 30, 'Web Developer');
+
+die(var_dump($person-&gt;laysEggs()));
+
+
+//bool(true)
+
+$person = new Person('Sue', 30, 'Web Developer');
+
+die(var_dump($person-&gt;isMulticellular()));
+
+</code></pre>
+</div>
+
+<p>Inheritance is a handy way for a program to reuse code and keep classes closely aligned with the real-world objects they are modeled after.</p>
+
+<p>Lastly, you are able to override inherited properties or methods by simply redefining it within the subclass.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>class Color {
+	protected $light = true;
+
+	public function lightPresent()
+	{
+		return $this-&gt;light;
+	}
+}
+
+class Black {
+	protected $light = false;
+}
+
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+\\bool(true)
+
+$red = new Color();
+die(var_dump($red-&gt;lightPresent()));
+
+
+\\bool(false)
+
+$black = new Black();
+die(var_dump($black-&gt;lightPresent()));
+
+</code></pre>
+</div>
+
+				<a class="back" href="/blog-feed.html">&laquo; Back</a>
+			</div>
+			<br />
+		</div>
+	</div>
+</div>
+
+</div>
+
+		<div class="push"></div>
+	</div>
+
+</div>
+
+<footer class="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6 col-centered">
+				<ul>
+					<li class="contact"><a href="https://github.com/clarkmurray" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+					<li class="contact"><a href="https://www.linkedin.com/in/clark-murray-1a5286123/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+					<li class="contact"><a href="https://stackoverflow.com/users/8489520/clark-murray?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6 col-centered"><p class="copyright">Copyright &copy; 2017 Clark Murray</p>
+			</div>
+			<div class="col sm-3"></div>
+		</div>
+	</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
