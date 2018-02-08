@@ -3,20 +3,21 @@ layout: default
 title: My Blog
 ---
 
-<div class="container-fluid">
+<div class="container">
+	<div class="row section-name blog-posts">
+		<div class="col text-center">
+			<h1>Blog Posts</h1>
+		</div>
+	</div>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="content">
-				<h1 id="blogPosts">Blog Posts</h1>
-				<hr />
-				<br />
-			  {% for post in site.posts %}
-			    <h1 class="blog-link"><a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></h1>
-			    <span class="post-date">{{ post.date | date: '%B %-d, %Y' }}</span>
-			    {{ post.excerpt }}
-			    <br />
-			  {% endfor %}
-			</div>
+		<div class="col">
+			 {% for post in site.posts %}
+			  	<div class="blog-preview">
+				    <h1 class="blog-link"><a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></h1>
+				    <span class="post-date">{{ post.date | date: '%B %-d, %Y' }}</span>
+			    	{{ post.excerpt }}
+				</div>
+			{% endfor %}
 		</div>
 	</div>
 </div>

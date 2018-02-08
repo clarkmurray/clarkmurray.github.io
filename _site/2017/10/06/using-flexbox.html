@@ -52,18 +52,16 @@
 		</nav>
 	</header>
 
-		<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="container">
+	<div class="row section-name blog-posts">
+		<div class="col text-center">
 			<h1>Equal Height Columns With Flexbox</h1>
-			<div class="text-center">
-				<h4 class="post-date">October 6, 2017</h4>
-			</div>
-
-			<br />
-
-			<div class="content">
-				<p>Already in my web development endeavors, I have frequently encountered trouble with a staple of web design that has no easy and reliable solution using regular CSS: equal height columns. While it can be accomplished with “hacks” such as setting up your content as a table to make your columns cells with equal height, none of these solutions are reliable in their responsiveness or interaction with the rest of your page. JavaScript could also be used, but should we really be forced to violate separation of concerns and write a block of code just to accomplish some of the most essential tasks in modern web design? Of course not!</p>
+			<h4 class="post-date">October 6, 2017</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<p>Already in my web development endeavors, I have frequently encountered trouble with a staple of web design that has no easy and reliable solution using regular CSS: equal height columns. While it can be accomplished with “hacks” such as setting up your content as a table to make your columns cells with equal height, none of these solutions are reliable in their responsiveness or interaction with the rest of your page. JavaScript could also be used, but should we really be forced to violate separation of concerns and write a block of code just to accomplish some of the most essential tasks in modern web design? Of course not!</p>
 
 <p>Thankfully, an easier and far more effective CSS-based method can be found using Flexbox. Flexbox (short for “flexible box”) was introduced in CSS3 as a responsive alternative to the block model. Where the block model assigns block height based on the box’s contents and is inflexible, Flexbox allows you to forego the headache of using floats and have more precide control over the style and positioning of your boxes and their child elements while also looking great on all screen sizes. To make the deal even sweeter, Flexbox is now supported on all major modern browsers (Chrome, FireFox, Safari, etc.), which means it is enjoying widespread use and, unless your site’s audience is expected to be on IE9-, it is to safe to use reliably in your own projects.</p>
 
@@ -84,9 +82,7 @@
 
 <p>There is so much more to Flexbox than just these examples. You can change the direction of your flex containers, make your flexboxes inline instead of block, justify and align your content, and determine the order of your contents within a flex container. For more information and examples, check out W3’s <a href="https://www.w3schools.com/css/css3_flexbox.asp">documentation</a> as well as the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Mozilla Developer’s Network (MDN)</a>.</p>
 
-				<a class="back" href="/blog-feed.html">&laquo; Back</a>
-			</div>
-			<br />
+			<a class="back" href="/blog-feed.html">&laquo; Back</a>
 		</div>
 	</div>
 </div>
@@ -94,10 +90,22 @@
 
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col text-center">
-				<p>Copyright 2018</p>
+			<div class="col">
+				<span class="align-center">
+					Copyright <span id="year">
+				</span>
+				<span class="align-right">
+					<a href="https://github.com/clarkmurray" target="_blank">
+						<i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/clark-murray-1a5286123/" target="_blank">
+						<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+					</a>
+				</span>
 			</div>
+		</div>
 	</footer>
 
+	<script src="./index.js"></script>
 </body>
 </html>

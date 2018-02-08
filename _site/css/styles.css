@@ -67,7 +67,8 @@ nav li {
 }
 
 footer {
-	background-color: gray;
+	/*background-color: #242729;*/
+	background-color: #3E4143;
 	color: white;
 	bottom: 0;
 }
@@ -104,6 +105,7 @@ footer {
 .myPhoto {
 	height: 100%;
 	width: 100%;
+	border-radius: 4px;
 }
 
 .skill-col {
@@ -129,3 +131,23 @@ input.form-control:focus, textarea.form-control:focus {
 	background-color: #B26C32;
 	color: white;
 }
+
+/* Portfolio */
+
+.project-photo {
+	height: 300px;
+}
+
+/* Blog Feed */
+
+.blog-posts {
+	margin-top: 75px;
+}
+
+.blog-preview {
+	margin: 20px 40px 0px;
+}
+
+
+
+/* Footer */

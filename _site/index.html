@@ -152,6 +152,39 @@
 			<h1>Portfolio</h1>
 		</div>
 	</div>
+	<div class="row section-content">
+		<div class="col">
+			<div class="card">
+				<img class="card-img-top project-photo" src="./images/clarkBacklogPage.png">
+				<div class="card-body">
+					<h3 class="card-title text-center">Backlogged</h5>
+					<p>Backlogged is a Goodreads-like application that is meant to track users' backlogs across multiple forms of media (at present, books and movies, with TV shows currently under development). The application is built with Laravel on the back-end and Vue on the front-end, and also implements Algolia's Vue InstantSearch and Bootstrap 3.</p>
+					<div class="text-center">
+						<button class="btn btn-primary">Application</button>
+						<button class="btn btn-primary">Source Code</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img class="card-img-top project-photo" src="./images/ipam.png">
+				<div class="card-body">
+					<h3 class="card-title text-center">IPAM</h3>
+					<p class="card-text">IPAM (Internet Protocol Address Manager) began as a final group project for the S17 cohort of the Awesome Inc U Bootcamp (the cohort prior to mine). I and three others were tasked with converting the front-end of the application from Angular to Vue, to allow for greater compatibiltiy with the Laravel framework that was used on the back-end. We also converted the project away from the Bootstrap CSS framework and into Vuetify.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img class="card-img-top project-photo" src="./images/larrymail.png">
+				<div class="card-body">
+					<h3 class="card-title text-center">Laramail</h3>
+					<p class="card-text">Laramail is an internal messaging application built in the style of Gmail using Laravel, and capable of exchanging messages between registered users as well as starring messages, creating drafts, and soft and hard deletes. The application was a group project, with the group being split into three teams, each of whom worked on separate features and bugs while coordinating with the other teams via Github Issues. My group worked primarily on the reply functionality (both to single and multiple recipients), drafts, and cleaning up sundry bugs.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section id="contact" class="container-fluid color-background">
@@ -191,10 +224,22 @@
 
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col text-center">
-				<p>Copyright 2018</p>
+			<div class="col">
+				<span class="align-center">
+					Copyright <span id="year">
+				</span>
+				<span class="align-right">
+					<a href="https://github.com/clarkmurray" target="_blank">
+						<i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/clark-murray-1a5286123/" target="_blank">
+						<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+					</a>
+				</span>
 			</div>
+		</div>
 	</footer>
 
+	<script src="./index.js"></script>
 </body>
 </html>

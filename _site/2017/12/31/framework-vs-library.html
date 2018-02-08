@@ -52,18 +52,16 @@
 		</nav>
 	</header>
 
-		<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="container">
+	<div class="row section-name blog-posts">
+		<div class="col text-center">
 			<h1>Frameworks vs. Libraries</h1>
-			<div class="text-center">
-				<h4 class="post-date">December 31, 2017</h4>
-			</div>
-
-			<br />
-
-			<div class="content">
-				<p>Despite libraries and frameworks both enjoying widespread use in web development, there is much confusion about the difference between the two, and the two terms are often (incorrectly) used interchangeably. The confusion is understandable. Both libraries and frameworks consist of pre-written code designed to reliably and efficiently solve common problems. However, the way in which the user calls said code differs greatly. For example, look at the following code required to call a ‘greet’ function and a ‘goodbye’ function using jQuery and Vue.js, a popular JavaScript library and framework respectively.</p>
+			<h4 class="post-date">December 31, 2017</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<p>Despite libraries and frameworks both enjoying widespread use in web development, there is much confusion about the difference between the two, and the two terms are often (incorrectly) used interchangeably. The confusion is understandable. Both libraries and frameworks consist of pre-written code designed to reliably and efficiently solve common problems. However, the way in which the user calls said code differs greatly. For example, look at the following code required to call a ‘greet’ function and a ‘goodbye’ function using jQuery and Vue.js, a popular JavaScript library and framework respectively.</p>
 
 <h3 id="jquery">jQuery</h3>
 
@@ -125,9 +123,7 @@ function goodbye() {
 
 <p>The decision between choosing a library or a framework is largely an arbitary one, however. It is common to use both a library and a framework (or even many libraries and frameworks) within the same application to fulfill different purposes. For example, a chat app might make use of the jQuery library for animations and the Carbon library for message timestamps, while also using the CSS framework Bootstrap for styling, Vue.js for the front-end, and Django or Ruby on Rails as a server-side framework.</p>
 
-				<a class="back" href="/blog-feed.html">&laquo; Back</a>
-			</div>
-			<br />
+			<a class="back" href="/blog-feed.html">&laquo; Back</a>
 		</div>
 	</div>
 </div>
@@ -135,10 +131,22 @@ function goodbye() {
 
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col text-center">
-				<p>Copyright 2018</p>
+			<div class="col">
+				<span class="align-center">
+					Copyright <span id="year">
+				</span>
+				<span class="align-right">
+					<a href="https://github.com/clarkmurray" target="_blank">
+						<i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/clark-murray-1a5286123/" target="_blank">
+						<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+					</a>
+				</span>
 			</div>
+		</div>
 	</footer>
 
+	<script src="./index.js"></script>
 </body>
 </html>
