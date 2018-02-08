@@ -21,9 +21,27 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 75px;
 	z-index: 9999;
 	font-size: 20px;
+}
+
+.navbar, .navbar-brand {
+	min-height: 75px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.navbar-toggle {
+	margin-top: 20.5px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (75px - line-height of 27px) / 2 = 24px */
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 24px;
+  }
 }
 
 ul.navbar-nav.ml-auto {
@@ -32,6 +50,7 @@ ul.navbar-nav.ml-auto {
 
 nav a.navbar-brand {
 	font-size: 26px;
+	line-height: 75px;
 	color: white !important;
 }
 
@@ -39,8 +58,8 @@ a.nav-link {
 	color: white !important;
 }
 
-nav a:hover {
-	color: #B26C32;
+a.nav-link:hover {
+	color: #B26C32 !important;
 }
 
 nav li {
