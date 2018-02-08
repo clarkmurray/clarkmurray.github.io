@@ -122,6 +122,24 @@ section.container-fluid.color-background {
 	color: white;
 }
 
+
+/* Portfolio */
+
+.project-photo {
+	height: 300px;
+}
+
+/* Contact Form */
+
+.social {
+	color: white;
+}
+
+.social:hover {
+	color: #1E6A6B;
+	text-decoration: none;
+}
+
 input.form-control, textarea.form-control {
 	background-color: #B26C32;
 	color: white;
@@ -130,12 +148,6 @@ input.form-control, textarea.form-control {
 input.form-control:focus, textarea.form-control:focus {
 	background-color: #B26C32;
 	color: white;
-}
-
-/* Portfolio */
-
-.project-photo {
-	height: 300px;
 }
 
 /* Blog Feed */
@@ -149,5 +161,8 @@ input.form-control:focus, textarea.form-control:focus {
 }
 
 
-
 /* Footer */
+
+#copyright {
+	padding: 10px;
+}
