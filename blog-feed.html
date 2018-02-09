@@ -10,12 +10,12 @@ title: My Blog
 		</div>
 	</div>
 	<div class="row">
-		<div class="col">
+		<div class="col-10 offset-1">
 			 {% for post in site.posts %}
 			  	<div class="blog-preview">
-				    <h1 class="blog-link"><a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></h1>
-				    <span class="post-date">{{ post.date | date: '%B %-d, %Y' }}</span>
-			    	{{ post.excerpt }}
+				    <h2 class="blog-link text-center"><a class="blog-link" href="{{ post.url }}">{{ post.title }}</a></h2>
+				    <p class="post-date text-center">{{ post.date | date: '%B %-d, %Y' }}</p>
+			    	<p>{{ post.excerpt }}</p>
 				</div>
 			{% endfor %}
 		</div>

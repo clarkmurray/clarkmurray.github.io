@@ -6,11 +6,11 @@ layout: default
 	<div class="row section-name blog-posts">
 		<div class="col text-center">
 			<h1>{{ page.title }}</h1>
-			<h4 class="post-date">{{ page.date | date: '%B %-d, %Y' }}</h4>
+			<h5 class="post-date">{{ page.date | date: '%B %-d, %Y' }}</h5>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col">
+		<div class="col-10 offset-1">
 			{{ content }}
 			<a class="back" href="/blog-feed.html">&laquo; Back</a>
 		</div>

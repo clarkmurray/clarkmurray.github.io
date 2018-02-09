@@ -6,7 +6,6 @@ title: "Object-Oriented Programming Part 1"
 Object-oriented programming is a programming paradigm based around separating data and the means of manipulating data into separate, reusable sections of code known "classes", with the logic of the program deriving from the interaction between classes. Classes are typically designed to serve as a data models of real world objects. For example, a chair might be represented by a "Chair" class, which would contain information about the chair such as how many legs it has, what color it is, and what material it is made out of, as well as representing actions that the chair may be able to perform, such as whether or not it can recline or roll. A basic class might look something like this:
 
 ```
-
 class Person {
 
 	public $career;

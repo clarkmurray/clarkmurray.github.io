@@ -125,8 +125,21 @@ section.container-fluid.color-background {
 
 /* Portfolio */
 
+.card {
+	margin-bottom: 40px;
+}
+
+.card-link:hover {
+	color: #B26C32;
+}
+
 .project-photo {
 	height: 300px;
+}
+
+.card-body {
+	height: 300px;
+	overflow: scroll;
 }
 
 /* Contact Form */
@@ -157,12 +170,22 @@ input.form-control:focus, textarea.form-control:focus {
 }
 
 .blog-preview {
-	margin: 20px 40px 0px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+.blog-link {
+	color: navy;
+}
+
+.blog-link:hover {
+	color: #B26C32;
 }
 
 
 /* Footer */
 
 #copyright {
-	padding: 10px;
+	padding: 18px;
+	margin-bottom: 0px;
 }
