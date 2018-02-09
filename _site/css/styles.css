@@ -129,6 +129,10 @@ section.container-fluid.color-background {
 	margin-bottom: 40px;
 }
 
+.card-link {
+	color: #1E6A6B;
+}
+
 .card-link:hover {
 	color: #B26C32;
 }
