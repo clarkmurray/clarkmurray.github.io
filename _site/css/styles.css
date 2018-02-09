@@ -140,10 +140,14 @@ section.container-fluid.color-background {
 	color: #F48024;
 }
 
-.my-name {
+.my-name, .my-title {
+	font-weight: 900;
+}
+
+/*.my-name {
 	font-size: 5em;
 	font-weight: bold;
-}
+}*/
 
 .landing-icon {
 	padding: 0px 15px;
