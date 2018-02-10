@@ -116,6 +116,10 @@ footer {
 	max-width: 150px;
 }
 
+.col {
+	border: 1px solid transparent;
+}
+
 section.container-fluid.color-background {
 	background-color: #B26C32;
 	color: white;
