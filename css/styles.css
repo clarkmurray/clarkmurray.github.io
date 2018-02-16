@@ -76,6 +76,13 @@ footer {
 	color: white !important;
 }
 
+:target {
+  display: block;
+  position: relative;
+  top: -74px; 
+  visibility: hidden;
+}
+
 #landing {
 	background-image: url("http://dabushar.com/sites/default/files/field/image/web_development.jpg");
     height: 100%; 
