@@ -46,7 +46,7 @@ $('a[href*="#"]').each(function () {
   }
 });
 
-jQuery(document).ready(function(){
+$(document).ready(function(){
 // run on DOM ready
 // grab target from URL hash (i.e. www.example.com/page-a.html#target-name)
  
@@ -56,7 +56,7 @@ jQuery(document).ready(function(){
  
   if ( target != '' ){
       var $target = jQuery(target); 
-      jQuery('html, body').stop().animate({
+      $('html, body').stop().animate({
       'scrollTop': $target.offset().top - 74}, // set offset value here i.e. 50
       1, 
       'swing',function () {
