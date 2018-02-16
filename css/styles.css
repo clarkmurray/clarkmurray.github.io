@@ -106,6 +106,10 @@ footer {
 	padding-bottom: 50px;
 }
 
+.portfolio-content {
+	padding-bottom: 30px;
+}
+
 .myPhoto {
 	height: 100%;
 	width: 100%;
@@ -204,6 +208,10 @@ input.form-control, textarea.form-control {
 input.form-control:focus, textarea.form-control:focus {
 	background-color: #B26C32;
 	color: white;
+}
+
+#contact-form {
+	padding-bottom: 4px;
 }
 
 /* Blog Feed */
