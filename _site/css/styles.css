@@ -1,242 +1,168 @@
-@font-face {
-	font-family: "Bebas Neue";
-	src: url('/fonts/bebas_neue/BebasNeue Bold.otf');
-}
-
-body, html {
-	height: 100%;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Raleway, Arial, sans-serif;
-	line-height: 35px;
-	position: relative;
-}
-
 nav {
-	background-color: #1E6A6B;
-	position: fixed !important;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 9999;
-	font-size: 20px;
-}
+  background-color: #1E6A6B;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  font-size: 20px; }
+  nav li {
+    padding-right: 15px; }
+  nav a.navbar-brand {
+    font-size: 26px;
+    line-height: 75px;
+    color: white !important; }
 
 .navbar, .navbar-brand {
-	min-height: 75px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
+  min-height: 75px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 .navbar-toggle {
-	margin-top: 20.5px;
-}
+  margin-top: 20.5px; }
 
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     /* (75px - line-height of 27px) / 2 = 24px */
     padding-top: 24px;
     padding-bottom: 24px;
-    line-height: 24px;
-  }
-}
-
+    line-height: 24px; } }
 ul.navbar-nav.ml-auto {
-	background-color: #1E6A6B;
-}
+  background-color: #1E6A6B; }
 
-nav a.navbar-brand {
-	font-size: 26px;
-	line-height: 75px;
-	color: white !important;
-}
-
-a.nav-link {
-	color: white !important;
-}
+a.nav-link, .navbar-light span.navbar-toggler-icon {
+  color: white !important; }
 
 a.nav-link:hover {
-	color: #B26C32 !important;
-}
-
-nav li {
-	padding-right: 15px;
-}
+  color: #B26C32 !important; }
 
 a.nav-link.active {
-	color: black !important;
-}
-
-footer {
-	/*background-color: #242729;*/
-	background-color: #3E4143;
-	color: white;
-	bottom: 0;
-}
-
-.navbar-light span.navbar-toggler-icon {
-	color: white !important;
-}
+  color: black !important; }
 
 #landing {
-	background-image: url("http://dabushar.com/sites/default/files/field/image/web_development.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  background-image: url("http://dabushar.com/sites/default/files/field/image/web_development.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .landing-info {
-	color: white;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.section-name {
-	padding: 30px 0px;
-}
-
-.section-content {
-	padding-bottom: 50px;
-}
-
-.portfolio-content {
-	padding-bottom: 30px;
-}
-
-.myPhoto {
-	height: 100%;
-	width: 100%;
-	border-radius: 4px;
-}
-
-.skill-col {
-	padding: 20px 10px;
-}
-
-.skill-logo {
-	height: 125px;
-	max-width: 150px;
-}
-
-.col {
-	border: 1px solid transparent;
-}
-
-section.container-fluid.color-background {
-	background-color: #B26C32;
-	color: white;
-}
-
-/* Landing */
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; }
 
 .landing-link, .landing-link:visited {
-	color: white;
-}
+  color: white; }
 
 .landing-link.github:hover {
-	color: #24292e;
-}
+  color: #24292e; }
 
 .landing-link.linkedin:hover {
-	color: #0077B5;
-}
+  color: #0077B5; }
 
 .landing-link.stack-overflow:hover {
-	color: #F48024;
-}
+  color: #F48024; }
 
 .my-name, .my-title {
-	font-weight: 900;
-}
-
-/*.my-name {
-	font-size: 5em;
-	font-weight: bold;
-}*/
+  font-weight: 900; }
 
 .landing-icon {
-	padding: 0px 15px;
-}
+  padding: 0px 15px; }
 
+.myPhoto {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px; }
 
-/* Portfolio */
+.skill-col {
+  padding: 20px 10px; }
+
+.skill-logo {
+  height: 125px;
+  max-width: 150px; }
+
+.portfolio-content {
+  padding-bottom: 30px; }
 
 .card {
-	margin-bottom: 40px;
-}
-
-.card-link {
-	color: #1E6A6B;
-}
-
-.card-link:hover {
-	color: #B26C32;
-}
+  margin-bottom: 40px; }
 
 .project-photo {
-	height: 300px;
-}
+  height: 300px; }
 
 .card-body {
-	height: 300px;
-	overflow: scroll;
-}
+  height: 300px;
+  overflow: scroll; }
 
-/* Contact Form */
+.card-link {
+  color: #1E6A6B; }
+
+.card-link:hover {
+  color: #B26C32; }
 
 .social {
-	color: white;
-}
+  color: white; }
 
 .social:hover {
-	color: #1E6A6B;
-	text-decoration: none;
-}
-
-input.form-control, textarea.form-control {
-	background-color: #B26C32;
-	color: white;
-}
-
-input.form-control:focus, textarea.form-control:focus {
-	background-color: #B26C32;
-	color: white;
-}
+  color: #1E6A6B;
+  text-decoration: none; }
 
 #contact-form {
-	padding-bottom: 4px;
-}
+  padding-bottom: 4px; }
 
-/* Blog Feed */
+input.form-control,
+input.form-control:focus,
+textarea.form-control,
+textarea.form-control:focus {
+  background-color: #B26C32;
+  color: white; }
 
 .blog-posts {
-	margin-top: 75px;
-}
+  margin-top: 75px; }
 
 .blog-preview {
-	margin-top: 20px;
-	margin-bottom: 60px;
-}
+  margin-top: 20px;
+  margin-bottom: 60px; }
 
 .blog-link {
-	color: navy;
-}
+  color: navy; }
 
 .blog-link:hover {
-	color: #B26C32;
-}
+  color: #B26C32; }
 
-
-/* Footer */
+footer {
+  background-color: #3E4143;
+  color: white;
+  bottom: 0; }
 
 #copyright {
-	padding: 18px;
-	margin-bottom: 0px;
-}
+  padding: 18px;
+  margin-bottom: 0px; }
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/bebas_neue/BebasNeue Bold.otf"); }
+body, html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, Arial, sans-serif;
+  line-height: 35px;
+  position: relative; }
+
+.section-name {
+  padding: 30px 0px; }
+
+.section-content {
+  padding-bottom: 50px; }
+
+section.container-fluid.color-background {
+  background-color: #B26C32;
+  color: white; }
+
+/*# sourceMappingURL=styles.css.map */

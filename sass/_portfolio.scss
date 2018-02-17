@@ -1,0 +1,27 @@
+// Portfolio section
+
+
+.portfolio-content {
+	padding-bottom: 30px;
+}
+
+.card {
+	margin-bottom: 40px;
+}
+
+.project-photo {
+	height: 300px;
+}
+
+.card-body {
+	height: 300px;
+	overflow: scroll;
+}
+
+.card-link {
+	color: $brand-primary;
+}
+
+.card-link:hover {
+	color: $brand-secondary;
+}

@@ -1,0 +1,57 @@
+// Header navbar
+
+
+nav {
+	background-color: $brand-primary;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	font-size: 20px;
+
+	li {
+		padding-right: 15px;
+	}
+
+	a.navbar-brand {
+		font-size: 26px;
+		line-height: 75px;
+		color: white !important;
+	}
+}
+
+.navbar, .navbar-brand {
+	min-height: 75px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.navbar-toggle {
+	margin-top: 20.5px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (75px - line-height of 27px) / 2 = 24px */
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 24px;
+  }
+}
+
+ul.navbar-nav.ml-auto {
+	background-color: $brand-primary;
+}
+
+a.nav-link, .navbar-light span.navbar-toggler-icon {
+	color: white !important;
+}
+
+a.nav-link:hover {
+	color: $brand-secondary !important;
+}
+
+a.nav-link.active {
+	color: black !important;
+}

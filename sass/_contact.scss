@@ -1,0 +1,23 @@
+// Contact Form
+
+
+.social {
+	color: white;
+}
+
+.social:hover {
+	color: $brand-primary;
+	text-decoration: none;
+}
+
+#contact-form {
+	padding-bottom: 4px;
+}
+
+input.form-control,
+input.form-control:focus,
+textarea.form-control,
+textarea.form-control:focus {
+	background-color: $brand-secondary;
+	color: white;
+}

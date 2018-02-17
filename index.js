@@ -27,7 +27,7 @@ $('a[href*="#"]').each(function () {
       if (target) {
         $(this).click(function (event) {
           event.preventDefault();
-          $('html, body').animate({scrollTop: ($target.offset().top) - 74}, 2000, function () {
+          $('html, body').animate({scrollTop: ($target.offset().top) - 74}, 1500, function () {
           	var x = window.scrollX, y = window.scrollY;
             location.hash = target; 
             $target.focus();

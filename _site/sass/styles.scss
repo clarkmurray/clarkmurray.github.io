@@ -1,0 +1,50 @@
+// Variables
+
+$brand-primary: #1E6A6B;
+$brand-secondary: #B26C32;
+$brand-tertiary: navy;
+
+
+// Import Partials
+
+@import 'nav';
+@import 'landing';
+@import 'about';
+@import 'skills';
+@import 'portfolio';
+@import 'contact';
+@import 'blog-feed';
+@import 'footer';
+
+
+// Global styles
+
+@font-face {
+	font-family: "Bebas Neue";
+	src: url('/fonts/bebas_neue/BebasNeue Bold.otf');
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Raleway, Arial, sans-serif;
+	line-height: 35px;
+	position: relative;
+}
+
+.section-name {
+	padding: 30px 0px;
+}
+
+.section-content {
+	padding-bottom: 50px;
+}
+
+section.container-fluid.color-background {
+	background-color: $brand-secondary;
+	color: white;
+}
